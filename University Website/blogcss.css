@@ -1,0 +1,467 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+}
+.header
+{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    position:relative;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 15px;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: Poppins,sans-serif;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    display: block;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.text-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.text-content h1{
+    font-size: 60px;
+    
+}
+.text-content p
+{
+    margin: 20px 0 40px;
+}
+.text-content a
+{
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    font-size: 12px;
+}
+.text-content a:hover
+{
+    background-color: rgb(255, 42, 0);
+    transition: 1s;
+    border-style: none;
+}
+@media(max-width:700px)
+{
+    .text-content h1
+    {
+        font-size: 40px;
+    }
+}
+.course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1
+{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.course p{
+    font-size: 14px;
+    color: rgb(124, 120, 120);
+}
+.course-row
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.course-details
+{
+    flex-basis:30%;
+    background: rgb(250, 231, 196);
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    transition: 1s;
+}
+.course-details h3
+{
+    padding-bottom: 13px;
+    color: rgb(44, 43, 43);
+}
+.course-details p
+{
+    font-size: 12px;
+    color:rgb(124, 120, 120)
+}
+.course-details:hover
+{
+    background: rgb(244, 167, 66);
+    transition: 1s;
+    
+}
+.campus-pic
+{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.campus-pic p
+{
+    padding-top: 10px;
+    font-size: 12px;
+    color:rgb(124, 120, 120)
+}
+
+.row-pic
+{
+    display: flex;
+    margin-top: 60px;
+    column-gap: 20px;
+}
+.column-pic
+{
+    flex-basis: 33%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.column-pic img
+{
+    width:90%;
+    height: 90%;
+    display: block;
+    border-radius: 10px;
+}
+.layer
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    transition: 1s;
+    /* box-sizing: border-box; */
+    /* border-radius: 10px; */
+}
+.layer:hover
+{
+    background-color: rgba(255, 0, 0, 0.711);
+    transition: 1s;
+}
+.layer h3
+{
+    bottom: 0px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    color:white;
+    font-weight: 400;
+    opacity: 0;
+    width: 100%;
+    transition: 1s;
+    
+}
+.layer:hover h3
+{
+    opacity: 1;
+    bottom: 49%;
+    transition: 1s;
+}
+.Facilities
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.Facilities p
+{
+    padding-top: 10px;
+    font-size: 12px;
+    color:rgb(124, 120, 120)
+}
+.column-pic h4
+{
+    padding-top: 10px;
+}
+.column-pic p
+{
+    padding-top: 10px;
+    font-size: 12px;
+    color:rgb(124, 120, 120)
+}
+.facilities-pic
+{
+    flex-basis: 33%;
+    margin-bottom: 5%;
+}
+.facilities-pic img
+{
+    width: 80%;
+    border-radius: 10px;
+    height: 80%;
+}
+.testimonials
+{
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;    
+    width: 80%;
+}
+.feedback
+{
+    flex-basis: 49%;
+    background-color: pink;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+    display: flex;
+    border-radius: 10px;
+}
+.feedback img
+{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.feedback h6
+{
+    padding-top: 20px;
+}
+.feedback p
+{
+    font-size: 15px;
+}
+.feedback .fa-star
+{
+    color: gold;
+}
+.about
+{
+    margin: 100px auto;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    padding: 100px 0;
+
+}
+.about h3
+{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 400;
+    transition: 1s;
+    display: inline-block;
+}
+.about h3:hover
+{
+    background-color: rgb(255, 98, 31);
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.footer
+{
+    margin:  50px auto;
+    width: 80%;
+    text-align: center;
+}
+.footer p
+{
+    font-size: 12px;
+    padding: 20px;
+}
+.icons .fa
+{
+    padding: 20px;
+    cursor: pointer;
+    color: orange;
+}
+.fa-heart{
+    color: red;
+}
+.rating
+{
+    align-items: center;
+}
+.blog-left
+{
+    display: flex;
+    margin:  50px auto;
+    width: 80%;
+    justify-content: space-between;
+}
+.blog1
+{
+    width: 80%;
+    flex-basis: 60%;
+}
+.blog1 img
+{
+    width: 100%;
+    margin: 20px;
+}
+.blog1 p
+{
+    font-size: 15px;
+    margin: 0px 20px;
+    color: rgb(134, 134, 134);
+}
+.blog1 h3
+{
+    margin: 30px;
+}
+.blog-right
+{
+    flex-basis: 33%;
+}
+.blog-right h3
+{
+    background-color: orangered;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    margin-top: 55px;
+}
+.blog-right div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.blog-right span
+{
+    margin: 5px;
+}
+.div2
+{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.card
+{
+    text-align: left;
+    flex-basis: 30%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card img
+{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+.card p
+{
+    font-size: 11px;
+    margin: 5px;
+}
+div.right-news
+{
+    margin-top: 20px;
+}
+.contact-form
+{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+
+}
+.contact-form input,.contact-form textarea
+{
+    width: 90%;
+    margin: 10px;
+    background-color: rgb(239, 239, 239);
+    padding: 10px;
+    border-style: none;
+}
+.contact-form button
+{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-color: lightgray;
+    border-style: solid;
+}
+.contact-form button:hover
+{
+    background-color: orangered;
+    transition: 0.5s;
+    color: white;
+}
+.contact-form h3
+{
+    margin: 10px;
+
+}
